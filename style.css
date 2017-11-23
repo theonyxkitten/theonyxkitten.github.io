@@ -1,4 +1,14 @@
+/*
 
+***   STYLE GUIDE   ***
+
+Main color: #ff3337
+
+Light version: #f9777a
+
+Dark version: #c92a2d
+
+*/
 *::selection {
     background-color: rgba(69, 168, 255, 0.76);
 }
@@ -52,14 +62,7 @@
     }
     
     *::selection {
-        background-color: rgba(69, 168, 255, 0.76);
-    }
-    
-    div.card {
-        margin: 1vw;
-        float: left;
-        width: 30vw;
-        box-shadow: 0 0 10px #000;
+        background-color: rgba(7, 130, 238, 0.76);
     }
 
 }
@@ -74,50 +77,41 @@ section {
     background-color: #9eecff;
 }
 header {
-    background-color: #002cbe;
-    background-image: -webkit-linear-gradient(19deg, #217efd 0%, #7b06de 100%);
-    background-image: -moz-linear-gradient(19deg, #217efd 0%, #7b06de 100%);
-    background-image: -o-linear-gradient(19deg, #217efd 0%, #7b06de 100%);
-    background-image: linear-gradient(19deg, #217efd 0%, #7b06de 100%);
-}
-.logo {
-    height: 45vh;
-    width: auto;
-    margin: 0 auto 5vh auto;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    background-image: url(assets/images/theonyxkitten.JPG);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .title {
-    font-size: 300%;
+    font-size: 500%;
     text-align: center;
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #9eecff;
+    color: #ff3337;
+    text-shadow: 2px 2px 0 #ffffff;
+    transition: 0.2s ease;
 }
-
-
-div.card:hover {
-    box-shadow: 0 0 20px #000;
+.title:hover {
+    text-shadow: 5px 5px 0 #ffffff70;
 }
-
-div.card img {
-    width: 100%;
-    height: auto;
+.instalink {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
 }
-
-div.card.desc {
-    padding: 1vw;
-    text-align: center;
+.instalink:hover {
+    width: 55px;
+    height: 55px;
 }
-
 .bio {
     width: 100%;
-    font-size: 50%;
+    font-size: 80%;
     padding: 7vw 12vw;
     text-align: center;
 }
